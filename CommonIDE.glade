@@ -1038,7 +1038,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_top">5</property>
-                        <property name="margin_bottom">5</property>
+                        <property name="margin_bottom">8</property>
                         <child>
                           <object class="GtkLabel" id="_restack_view_text_filename_file">
                             <property name="visible">True</property>
