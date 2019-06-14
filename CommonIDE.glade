@@ -527,7 +527,7 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="_ide_main_topbox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
@@ -892,7 +892,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_ide_editor_mainbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -1040,13 +1040,13 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkBox" id="_restack_view_text_filename_box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_top">5</property>
                         <property name="margin_bottom">5</property>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkLabel" id="_restack_view_text_filename_file">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="margin_left">5</property>
@@ -1060,7 +1060,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkLabel" id="_restack_view_text_filename_dir">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">end</property>
@@ -1489,18 +1489,18 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="_ide_prefs_topbox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_ide_prefs_labelbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="margin_top">5</property>
             <property name="margin_bottom">8</property>
             <child>
-              <object class="GtkLabel" id="_ide_prefs_window_title">
+              <object class="GtkLabel" id="_ide_prefs_window_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
@@ -1514,7 +1514,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="_ide_prefs_window_title_sep">
+              <object class="GtkLabel" id="_ide_prefs_window_label_sep">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
@@ -1549,7 +1549,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_ide_prefs_mainbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -1569,14 +1569,14 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkBox">
+                  <object class="GtkBox" id="_ide_prefs_panel0_box">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_left">5</property>
                     <property name="margin_right">5</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkBox" id="_ide_prefs_panel0_option0_box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="border_width">5</property>
@@ -1597,7 +1597,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="_ide_prefs_panel0_option0_entry">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="truncate_multiline">True</property>
@@ -1616,11 +1616,11 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkBox" id="_ide_prefs_panel0_option1_box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkLabel" id="_ide_prefs_panel0_option1_label">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -1635,7 +1635,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkMenuButton" id="_ide_prefs_optionset_1_menu_sel">
+                          <object class="GtkMenuButton" id="_ide_prefs_panel0_option1_menu">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
@@ -1717,18 +1717,18 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="_project_new_topbox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_project_new_labelbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="margin_top">5</property>
             <property name="margin_bottom">8</property>
             <child>
-              <object class="GtkLabel">
+              <object class="GtkLabel" id="_project_new_window_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
@@ -1742,7 +1742,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel">
+              <object class="GtkLabel" id="_project_new_window_label_sep">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
@@ -1756,7 +1756,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel">
+              <object class="GtkLabel" id="_project_new_panel_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
@@ -1777,7 +1777,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_project_new_mainbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -1794,7 +1794,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="_project_new_msgbar_text">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="halign">start</property>
