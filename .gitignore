@@ -1,5 +1,5 @@
 *~
 .#*
 *#
-## glade & webkit (??)
+## NB: Glade may segfault for a *.glade file using column type 'guchar' in a GtkListStore
 *.core
