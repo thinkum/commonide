@@ -1,0 +1,34 @@
+Script started on Fri Jun 14 15:47:00 2019
+Command: bash -c uname -a; pwd; date; find /usr/ports -type f -mindepth 3 -maxdepth 3 ! -path "/usr/ports/Mk/*" \( -name Makefile -o -name "*.mk" \) ! -name bsd.gnome-reference.mk -print0 | xargs -0 grep bsd.gnome-reference.mk
+FreeBSD riparian.cloud.thinkum.space 11.2-RELEASE-p9-fa113e14a11 FreeBSD 11.2-RELEASE-p9-fa113e14a11 #0 fa113e14a11(releng/11.2): Wed Apr 10 06:02:17 PDT 2019     gimbal@riparian.cloud.thinkum.space:/usr/obj/usr/src/sys/RIPARIAN  amd64
+/usr/ports/devel/libglade2-reference
+Fri Jun 14 15:47:00 PDT 2019
+/usr/ports/print/libgnomeprint-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/glibmm-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/libglade2-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/gnome-vfs-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/ORBit2-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/gconf2-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/libbonobo-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/devel/glib20-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11/libgnome-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-fonts/fontconfig-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/textproc/libxslt-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/textproc/libxml++26-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/textproc/gtkspell-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/textproc/libxml2-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/graphics/libgnomecanvas-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtksourceview3-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtksourceview2-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/libgnomeui-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtkmm30-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/libbonoboui-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/vte-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/libwnck-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtk20-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtkmm20-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtkmm24-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+/usr/ports/x11-toolkits/gtksourceview-reference/Makefile:.include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"
+
+Command exit status: 0
+Script done on Fri Jun 14 15:47:01 2019
