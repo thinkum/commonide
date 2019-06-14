@@ -2,11 +2,6 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <object class="GtkImage" id="_FROB_IMG">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-preferences</property>
-  </object>
   <object class="GtkListStore" id="_cmd_completion_liststore">
     <columns>
       <!-- column-name cmd_completion_gobject -->
@@ -20,6 +15,16 @@
   <object class="GtkMenu" id="_ide_mode_menu">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
+  </object>
+  <object class="GtkImage" id="_ide_preferences_btn_img">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-preferences</property>
+  </object>
+  <object class="GtkImage" id="_ide_preferences_new_img">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-add</property>
   </object>
   <object class="GtkMenu" id="_ide_prefs_optionset_1_menu">
     <property name="visible">True</property>
@@ -510,17 +515,6 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkWindow" id="_Editor_Prefs_1">
-    <property name="can_focus">False</property>
-    <property name="type_hint">dialog</property>
-    <property name="attached_to">_IDE_Main</property>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-  </object>
   <object class="GtkWindow" id="_IDE_Main">
     <property name="can_focus">False</property>
     <child>
@@ -701,7 +695,7 @@
                         <property name="label" translatable="yes">New IDE Window</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">_Prefs_Entry_Name_FIXME_BROKEN_LABEL</property>
+                        <property name="image">_ide_preferences_new_img</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
@@ -716,7 +710,7 @@
                         <property name="label" translatable="yes">IDE Preferences</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">_FROB_IMG</property>
+                        <property name="image">_ide_preferences_btn_img</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
@@ -1479,6 +1473,17 @@
           </packing>
         </child>
       </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="_Editor_Prefs_1">
+    <property name="can_focus">False</property>
+    <property name="type_hint">dialog</property>
+    <property name="attached_to">_IDE_Main</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <placeholder/>
     </child>
   </object>
   <object class="GtkWindow" id="_IDE_Prefs">
