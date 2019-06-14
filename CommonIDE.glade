@@ -1062,6 +1062,7 @@
                             <property name="margin_left">5</property>
                             <property name="margin_right">5</property>
                             <property name="label" translatable="yes">src/main/src</property>
+                            <property name="ellipsize">end</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -1311,6 +1312,7 @@
                           <object class="GtkTextView" id="_restack_view_multi_1_text_1_text">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="monospace">True</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -1349,6 +1351,7 @@
                                 <property name="margin_left">5</property>
                                 <property name="margin_right">5</property>
                                 <property name="label" translatable="yes">src/main/other</property>
+                                <property name="ellipsize">end</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -1379,6 +1382,7 @@
                           <object class="GtkTextView" id="_restack_view_multi_1_text_2_text">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="monospace">True</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -1418,6 +1422,7 @@
                                 <property name="margin_left">5</property>
                                 <property name="margin_right">5</property>
                                 <property name="label" translatable="yes">src/main/other</property>
+                                <property name="ellipsize">end</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
