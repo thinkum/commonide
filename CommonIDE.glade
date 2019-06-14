@@ -1586,7 +1586,7 @@
                         <property name="can_focus">False</property>
                         <property name="border_width">5</property>
                         <child>
-                          <object class="GtkLabel" id="_Prefs_Entry_Name_FIXME_BROKEN_LABEL">
+                          <object class="GtkLabel" id="_ide_prefs_panel0_option0_label">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
