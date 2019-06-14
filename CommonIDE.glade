@@ -11,19 +11,19 @@
   <object class="GtkEntryBuffer" id="_ide_cmd_entrybuffer">
     <property name="text" translatable="yes">Cmd (IDE Window)</property>
   </object>
-  <object class="GtkMenu" id="_ide_mode_menu">
+  <object class="GtkImage" id="_ide_menu_item_view_newidewin_img">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
+    <property name="stock">gtk-add</property>
   </object>
-  <object class="GtkImage" id="_ide_preferences_btn_img">
+  <object class="GtkImage" id="_ide_menu_item_view_prefs_img">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-preferences</property>
   </object>
-  <object class="GtkImage" id="_ide_preferences_new_img">
+  <object class="GtkMenu" id="_ide_mode_menu">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
   </object>
   <object class="GtkMenu" id="_ide_prefs_optionset_1_menu">
     <property name="visible">True</property>
@@ -97,16 +97,16 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkBox" id="_project_main_topbox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkMenuBar">
+          <object class="GtkMenuBar" id="_project_menu">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_project_menu_file">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_File</property>
@@ -171,7 +171,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_project_menu_edit">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Edit</property>
@@ -221,7 +221,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_project_menu_view">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_View</property>
@@ -229,7 +229,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_project_menu_help">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Help</property>
@@ -259,7 +259,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkToolbar">
+          <object class="GtkToolbar" id="_project_toolbar">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -325,7 +325,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_project_editor_mainbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -386,7 +386,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkBox" id="_project_ctrlbox">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -529,7 +529,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_ide_menu_file">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_File</property>
@@ -594,7 +594,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_ide_menu_edit">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Edit</property>
@@ -644,7 +644,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_ide_menu_view">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_View</property>
@@ -690,11 +690,11 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem">
+                      <object class="GtkImageMenuItem" id="_ide_menu_item_view_newidewin">
                         <property name="label" translatable="yes">New IDE Window</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">_ide_preferences_new_img</property>
+                        <property name="image">_ide_menu_item_view_newidewin_img</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
@@ -705,11 +705,11 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem">
+                      <object class="GtkImageMenuItem" id="_ide_menu_item_view_prefs">
                         <property name="label" translatable="yes">IDE Preferences</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">_ide_preferences_btn_img</property>
+                        <property name="image">_ide_menu_item_view_prefs_img</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
@@ -718,7 +718,7 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem">
+              <object class="GtkMenuItem" id="_ide_menu_help">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Help</property>
