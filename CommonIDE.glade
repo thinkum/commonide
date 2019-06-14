@@ -970,11 +970,11 @@
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkToolbar" id="_restack_view_text_1_toolbar">
+                      <object class="GtkToolbar" id="_restack_view_text_toolbar">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_1">
+                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_add">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="tooltip_text" translatable="yes">Add from Template</property>
@@ -988,7 +988,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_exec">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Apply</property>
@@ -1001,7 +1001,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_2">
+                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_prefs">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="tooltip_text" translatable="yes">Editor Preferences</property>
@@ -1094,11 +1094,11 @@
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkToolbar">
+                      <object class="GtkToolbar" id="_restack_view_web_toolbar">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_tbd">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">TBD</property>
@@ -1111,7 +1111,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_text_toolbar_button_pref">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="tooltip_text" translatable="yes">Configure Editor</property>
@@ -1149,11 +1149,11 @@
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkToolbar" id="_restack_view_model_1_toolbar">
+                      <object class="GtkToolbar" id="_restack_view_model_toolbar">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_model_toolbar_btn_add">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="tooltip_text" translatable="yes">Add</property>
@@ -1167,7 +1167,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_model_toolbar_btn_exec">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Apply</property>
@@ -1180,7 +1180,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkToolButton">
+                          <object class="GtkToolButton" id="_restack_view_model_toolbar_btn_prefs">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="tooltip_text" translatable="yes">Configure Editor</property>
@@ -1254,7 +1254,7 @@
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkToolbar" id="_restack_view_multi_1_toolbar">
+                      <object class="GtkToolbar" id="_restack_view_multi_toolbar_FIXME_REUSE_TEXT_TOOLBAR">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="toolbar_style">both-horiz</property>
