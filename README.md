@@ -65,7 +65,7 @@ revisions.
 - Test applications of the GtkListStore, GtkEntryCompletion,
   and GtkEntryBuffer implementation, for operations of
   programmable completion in the cmd entry buffer - this, for
-  each of the _IDE_Main and _Project_Main windows. The
+  each of the `_IDE_Main` and `_Project_Main` windows. The
   programmed completion implementation should be reusable, to
   some extent, for the REPL and/or Shell terminal usage cases.
 
@@ -122,6 +122,52 @@ The following concerns may also be addressed, in the CommonIDE project:
   that may be principally primary to some concerns of Manageability,
   _per se_.
 
+- Updates (GNOME 3 GTK Builder compatibility) and integration of the
+  nearly _extant_ [**libglade** source repository - `thinkum-contrib`
+  fork][libglade-src]. (**Ed. Note:** **libglade** appears to have been
+  been removed from the GNOME Gitlab and GNOME GitHub source
+  repositories, at some time corresponding to GNOME 3)
+
+- Evaluation of the GTK+ **GtkSocket** and **GtkPlug** APIs, in GNOME 3,
+  pursuant towards a possibility of reusing GNOME Dia UI components for
+  model editing, in CommonIDE.
+
+- Formal development support for Glade UI layout templates, in UI design
+  and UI implementation. Note the concerns with regars to constraints
+  for ID and Name values in Glade XML, as denoted below in this
+  document.
+
+- Integration with LLVM JIT and LLVM C APIs, for purposes of static
+  analysis and programmed reflection onto C source code, with GTK+,
+  **Glade**/**libglde** and CommonIDE.
+
+  Concerning differences in call stack conventions in Common Lisp
+  implementations, contrasted to any bytecode as may be produced with
+  LLVM, any bytecode generated with the LLVM-C and LLVM JIT APIs may
+  only be usable, in CommonIDE, for applications expressly in the
+  external C enviornment. Regardless, even within this ABI-related
+  limitation, it may serve to provide some support for integration with
+  C program systems, in ComonIDE.
+
+  More specifically, such integration could serve to be of some use when
+  validating a Glade XML UI description, in comparison to the set of
+  symbols that would be assumed to be available within the external C
+  program environment, in any applications as may be developed with
+  CommonIDE.
+
+  Ideally, such integration could also serve to provide for a more
+  comprehensive support for interactive testing of UI layouts designed
+  with Glade.
+
+  Of course, the Glade editor -- at present -- provides a manner of
+  broad support for interaction with UI preview windows, in the Glade
+  edtior environment, Insofar as for supporting development and
+  application of individual Glade UI layout descriptions in complete
+  GTK+ applications, some further support may be developed for support
+  of application testing with Glade UI layout decriptions in CommonIDE
+  -- pursuant of some careful integration with the LLVM compiler
+  framework.
+
 
 
 ### CommonIDE - Concepts of Design - Editor Views
@@ -142,7 +188,7 @@ The following assumptions (...)
   definition context (e.g a single *.glade file or XML stream).
 
 - Widget Name values may be relevant principally for applications of
-  libglade -- in a sense of application implementations, i,e "End User"
+  **libglade** -- in a sense of application implementations, i,e "End User"
   applications --  and must be unique within a similar definition
   context.
 
@@ -153,6 +199,9 @@ The following assumptions (...)
 
 
 ### CommonIDE UI Builder - Tool Support - Glade XML Grammar
+
+**Ed. Note:** A RELAX NG grammar for Glade 2.0 XML notation  has been
+added to the [**libglade** fork, at `thinkum-contrib`][libglade-src]
 
 As a manner of formalization for the Glade XML grammar, the Glade
 project defines an XML DTD for the Glade XML format. This formal DTD has
@@ -208,7 +257,7 @@ graphical applications using GTK+
 
 1. Creation of a UI Builder Layout
 
-    - in extension to libglade
+    - in extension to **libglade**
 
         - TBD: UI Builder support for Mobile Applications
 
@@ -231,13 +280,13 @@ graphical applications using GTK+
         - Note that any widget name templates may be relevant for
           evaluation in application environments, while widget ID
           templates may be relevant principally for evaluation within
-          the libglade environment. If a widget ID template, in
+          the **libglade** environment. If a widget ID template, in
           applications, may be derived from a widget name, in
           applications, this may serve to present some concerns with
           regards to widget ID consistency within the UI layout editor
           environment (TBD: Verifying this set of assumptions, with
           regards to application of widget ID and widget name values in
-          the Glade editor, and in applications extending libglade)
+          the Glade editor, and in applications extending **libglade**)
 
     - Note and linking between UI layout elements, program source
       elements, and application data elements, such as vis a vis:
@@ -274,15 +323,19 @@ graphical applications using GTK+
       libraries, principally in extension to GTK+
 
 
+[libglade-src]: https://github.com/thinkum-contrib/libglade
+
 <!--  LocalWords:  Thinkum CommonIDE GTK FFI APIs UI REPL VTE GIR Vala
  -->
 <!--  LocalWords:  GtkListStore GtkEntryCompletion GtkEntryBuffer cmd
  -->
 <!--  LocalWords:  GtkTextTagTable GtkTextTag runtime vscroll hscroll
  -->
-<!--  LocalWords:  changelog WebKit pkgsrc FreeBSD untrusted DTD NG
+<!--  LocalWords:  changelog WebKit pkgsrc FreeBSD untrusted DTD NG src
  -->
 <!--  LocalWords:  Extensibility libglade namespace nXML Schematron TBD
  -->
-<!--  LocalWords:  pSGML libxml vis se Stylesheet freedesktop FDO
+<!--  LocalWords:  pSGML libxml vis se Stylesheet freedesktop FDO Dia
+ -->
+<!--  LocalWords:  thinkum contrib Gitlab GtkSocket GtkPlug LLVM JIT
  -->
