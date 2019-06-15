@@ -58,14 +58,14 @@
       </object>
     </child>
   </object>
-  <object class="GtkMenu" id="_ide_terminal_menu">
+  <object class="GtkMenu" id="_ide_shell_menu">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <child>
       <object class="GtkMenuItem">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="label" translatable="yes">REPL Terminal</property>
+        <property name="label" translatable="yes">REPL Shell</property>
         <property name="use_underline">True</property>
       </object>
     </child>
@@ -87,7 +87,7 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkMenu" id="_project_terminal_menu">
+  <object class="GtkMenu" id="_project_shell_menu">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
   </object>
@@ -427,18 +427,18 @@
               </packing>
             </child>
             <child>
-              <object class="GtkMenuButton" id="_project_terminal_menubtn">
+              <object class="GtkMenuButton" id="_project_shell_menubtn">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="relief">none</property>
-                <property name="popup">_project_terminal_menu</property>
+                <property name="popup">_project_shell_menu</property>
                 <property name="direction">up</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">Terminal</property>
+                    <property name="label" translatable="yes">Shell</property>
                   </object>
                 </child>
               </object>
@@ -1527,18 +1527,18 @@
               </packing>
             </child>
             <child>
-              <object class="GtkMenuButton" id="_ideX_terminal_menubtn">
+              <object class="GtkMenuButton" id="_ideX_shell_menubtn">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="relief">none</property>
-                <property name="popup">_ide_terminal_menu</property>
+                <property name="popup">_ide_shell_menu</property>
                 <property name="direction">up</property>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">Terminal</property>
+                    <property name="label" translatable="yes">Shell</property>
                   </object>
                 </child>
               </object>
