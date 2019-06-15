@@ -458,12 +458,12 @@
       </object>
     </child>
   </object>
-  <object class="GtkAdjustment" id="_restack_view_model_1_layout_hscroll">
+  <object class="GtkAdjustment" id="_restack_view_model0_layout_hscroll">
     <property name="upper">100</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkAdjustment" id="_restack_view_model_1_layout_vscroll">
+  <object class="GtkAdjustment" id="_restack_view_model0_layout_vscroll">
     <property name="upper">100</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
@@ -958,7 +958,7 @@
                 <property name="can_focus">False</property>
                 <property name="interpolate_size">True</property>
                 <child>
-                  <object class="GtkBox" id="_restack_view_text_1">
+                  <object class="GtkBox" id="_restack_view_text0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
@@ -1017,7 +1017,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkTextView" id="_restack_view_text_1_view">
+                      <object class="GtkTextView" id="_restack_view_text0_view">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="hadjustment">_restack_view_text_view_1_hscroll</property>
@@ -1078,12 +1078,12 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">text_box_1</property>
+                    <property name="name">restack_view_text0</property>
                     <property name="title" translatable="yes">file.src - src/main/src</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox" id="_restack_view_web_1">
+                  <object class="GtkBox" id="_restack_view_web0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
@@ -1132,13 +1132,13 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">web_1</property>
+                    <property name="name">restack_view_web0</property>
                     <property name="title" translatable="yes">file.xul - src/layout/xul</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox" id="_restack_view_model_1">
+                  <object class="GtkBox" id="_restack_view_model0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
@@ -1197,11 +1197,11 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLayout" id="_restack_view_model_1_layout">
+                      <object class="GtkLayout" id="_restack_view_model0_layout">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="hadjustment">_restack_view_model_1_layout_hscroll</property>
-                        <property name="vadjustment">_restack_view_model_1_layout_vscroll</property>
+                        <property name="hadjustment">_restack_view_model0_layout_hscroll</property>
+                        <property name="vadjustment">_restack_view_model0_layout_vscroll</property>
                         <child>
                           <object class="GtkIconView">
                             <property name="width_request">100</property>
@@ -1237,18 +1237,18 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">model_1</property>
+                    <property name="name">restack_view_model0</property>
                     <property name="title" translatable="yes">file.modl - src/layout/modl</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox" id="_restack_view_multi_1">
+                  <object class="GtkBox" id="_restack_view_multi0">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkToolbar" id="_restack_view_multi_toolbar_FIXME_REUSE_TEXT_TOOLBAR">
+                      <object class="GtkToolbar" id="_restack_view_multi_toolbar_FIXME_APPWIDGET_TEXT_TOOLBAR">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="toolbar_style">both-horiz</property>
@@ -1301,14 +1301,14 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox" id="_restack_view_multi_1_text_1_box">
+                      <object class="GtkBox" id="_restack_view_multi0_text0_box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_top">5</property>
                         <property name="margin_bottom">5</property>
                         <property name="orientation">vertical</property>
                         <child>
-                          <object class="GtkTextView" id="_restack_view_multi_1_text_1_text">
+                          <object class="GtkTextView" id="_restack_view_multi0_text0_text">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="monospace">True</property>
@@ -1320,13 +1320,13 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkBox" id="_restack_view_text_filename_box_FIXME_REUSE_1">
+                          <object class="GtkBox" id="_restack_view_text_filename_box_FIXME_APPWIDGET_0">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="margin_top">5</property>
                             <property name="margin_bottom">8</property>
                             <child>
-                              <object class="GtkLabel" id="_restack_view_text_filename_file_FIXME_REUSE_1">
+                              <object class="GtkLabel" id="_restack_view_text_filename_file_FIXME_APPWIDGET_0">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
@@ -1342,7 +1342,7 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkLabel" id="_restack_view_text_filename_dir_FIXME_REUSE_1">
+                              <object class="GtkLabel" id="_restack_view_text_filename_dir_FIXME_APPWIDGET_0">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">end</property>
@@ -1373,12 +1373,12 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox" id="_restack_view_multi_1_text_2_box">
+                      <object class="GtkBox" id="_restack_view_multi0_text1_box">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="orientation">vertical</property>
                         <child>
-                          <object class="GtkTextView" id="_restack_view_multi_1_text_2_text">
+                          <object class="GtkTextView" id="_restack_view_multi0_text1_text">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="monospace">True</property>
@@ -1390,14 +1390,14 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkBox" id="_restack_view_text_filename_box_FIXME_REUSE_2">
+                          <object class="GtkBox" id="_restack_view_text_filename_box_FIXME_APPWIDGET_1">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">5</property>
                             <property name="margin_bottom">8</property>
                             <child>
-                              <object class="GtkLabel" id="_restack_view_text_filename_file_FIXME_REUSE_2">
+                              <object class="GtkLabel" id="_restack_view_text_filename_file_FIXME_APPWIDGET_1">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">start</property>
@@ -1413,7 +1413,7 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkLabel" id="_restack_view_text_filename_dir_FIXME_REUSE_2">
+                              <object class="GtkLabel" id="_restack_view_text_filename_dir_FIXME_APPWIDGET_1">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="halign">end</property>
@@ -1445,9 +1445,31 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">page0</property>
+                    <property name="name">restack_view_multi0</property>
                     <property name="title" translatable="yes">file.xh, file.xi</property>
                     <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="_restack_view_ui0">
+                    <property name="name">restack_view_ui0</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">restack_view_ui0</property>
+                    <property name="title" translatable="yes">file.glade - src/layout/glade</property>
+                    <property name="position">4</property>
                   </packing>
                 </child>
               </object>
