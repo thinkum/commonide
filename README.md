@@ -41,7 +41,7 @@ the design of the CommonIDE UI layout in its present revision:
 
 - IDE Editor Views
 
-- Shell Views (REPL, Terminal, Other)
+- Shell Views (REPL, UNIX Command-Line Shell, Other)
 
 - IDE Preferences
 
@@ -70,7 +70,7 @@ revisions.
   some extent, for the REPL and/or Shell terminal usage cases.
 
 - Define a normal semantics for the IDE and Project Management
-  'Mode' and 'Terminal' drop-up menus
+  'Mode' and 'Shell' drop-up menus
 
 - Test application of the GtkTextTagTable and GtkTextTag
   implementations, as in a manner after font-locking in Emacs.
