@@ -133,21 +133,21 @@ The following concerns may also be addressed, in the CommonIDE project:
   model editing, in CommonIDE.
 
 - Formal development support for Glade UI layout templates, in UI design
-  and UI implementation. Note the concerns with regars to constraints
+  and UI implementation. Note the concerns with regards to constraints
   for ID and Name values in Glade XML, as denoted below in this
   document.
 
 - Integration with LLVM JIT and LLVM C APIs, for purposes of static
   analysis and programmed reflection onto C source code, with GTK+,
-  **Glade**/**libglde** and CommonIDE.
+  **Glade**/**libglade** and CommonIDE.
 
   Concerning differences in call stack conventions in Common Lisp
   implementations, contrasted to any bytecode as may be produced with
   LLVM, any bytecode generated with the LLVM-C and LLVM JIT APIs may
   only be usable, in CommonIDE, for applications expressly in the
-  external C enviornment. Regardless, even within this ABI-related
+  external C environment. Regardless, even within this ABI-related
   limitation, it may serve to provide some support for integration with
-  C program systems, in ComonIDE.
+  C program systems, in CommonIDE.
 
   More specifically, such integration could serve to be of some use when
   validating a Glade XML UI description, in comparison to the set of
@@ -161,13 +161,54 @@ The following concerns may also be addressed, in the CommonIDE project:
 
   Of course, the Glade editor -- at present -- provides a manner of
   broad support for interaction with UI preview windows, in the Glade
-  edtior environment, Insofar as for supporting development and
+  editor environment, Insofar as for supporting development and
   application of individual Glade UI layout descriptions in complete
   GTK+ applications, some further support may be developed for support
-  of application testing with Glade UI layout decriptions in CommonIDE
+  of application testing with Glade UI layout descriptions in CommonIDE
   -- pursuant of some careful integration with the LLVM compiler
   framework.
 
+
+
+### CommonIDE - Concepts of Design - Generalized Widgets
+
+**Concept:** Widget Signatures
+- **Concept:** Widget Signature Definition
+- **Concept:** Widget Signature Implementation
+- **Concept:** Widget Initialization
+
+**Concept:** Towards a Generalized Interface for Development of
+Device-Neutral Widgets with Platform-Specific Implementations
+
+- Ed. NB: Juxtapose to some features of CLIM
+    - CLIM Streams model (for graphical applications in desktop environments?)
+    - CLIM Input Recording - Input Capture and Playback as a Generalized "Undo"
+    - CLIM Abstract Widget Model - as a highlight of the generalized
+      CLIM/CLIM2 Framework
+    - Generalized Accept/Present Flow in CLIM (Ed. NB, see also: Expect)
+    - Fonts in CLIM
+    - Pictures in CLIM
+    - Geometry and CLIM
+    - Portability in CLIM/CLIM2 - Ports, Sheets, Grafts ... and Applications
+
+- Ed. NB: Juxtapose also to Garnet
+    - In context, Garnet Gem and Garnet Opal systems - support for
+      specific presentational environments with generalized _device_
+      definitions
+        - X Window System instance as _device_ with Gem/Opal
+        - gworld and the Macintosh PC Desktop [Context:TechAnachronism]
+          (post-NeXT) with Gem/Opal
+    - The underlying KR object system in Garnet
+    - Fonts in Garnet
+    - Pictures and Cursors in Garnet
+    - Geometry and Garnet (Ed. NB: cf. _Garnetdraw_ demo)
+    - Garnet Gadgets, Aggregadgets, Aggregraphs
+
+- Ed. NB: This proposal is directed for development with GTK+ (Desktop)
+  and ncurses (Generalized Console Environment) APIs, if not furthermore
+  for application of user interface toolkits on mobile platforms
+  (e.g Android w/ JNI, iOS w/ FFI and Apple Frameworks as may be available
+  in XCode development, and X with Hildon on Maemo [Context:TechAnachronism])
 
 
 ### CommonIDE - Concepts of Design - Editor Views
@@ -339,3 +380,13 @@ graphical applications using GTK+
  -->
 <!--  LocalWords:  thinkum contrib Gitlab GtkSocket GtkPlug LLVM JIT
  -->
+<!--  LocalWords:  CLIM presentational gworld TechAnachronism NeXT JNI
+ -->
+<!--  LocalWords:  Garnetdraw ABI bytecode Aggregadgets Aggregraphs
+ -->
+<!--  LocalWords:  ncurses toolkits XCode Hildon Maemo
+ -->
+
+<!-- Local Variables: -->
+<!-- ispell-buffer-session-localwords: ("Aggregadgets" "Aggregraphs" "Garnetdraw" "Hildon" "JNI" "Maemo" "NeXT" "TechAnachronism" "XCode" "bytecode" "gworld" "ncurses" "presentational" "toolkits") -->
+<!-- End: -->
