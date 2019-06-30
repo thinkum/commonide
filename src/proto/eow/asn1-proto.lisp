@@ -43,12 +43,12 @@
    :read-only t
    ))
 
-;; TBD: Generalized Type Layouts for value signatures onto ASN.1
+;; TBD: Generalized Type Layouts for object/value signatures onto ASN.1
 
 ;; TBD/Topic: Language Models. Project Resource Models, and ASN.1
 ;; Protocol Specifications
 
-;; TBD Syntactic transformations for interfaces to scalar value in ASN.1,
+;; TBD Syntactic transformations for interfaces to scalar values in ASN.1,
 ;; ASN.1 -> C -> Lisp, transitively ASN.1 -> Lisp (cf. ports)
 ;;
 ;; TBD Type signatures, transitively ASN.1 -> Lisp
@@ -57,7 +57,8 @@
 ;; onto same ASN.1 -> Lisp toolchain.
 
 ;; TBD A minimal bibliography for ASN.1 - Language Description, Surveys
-;; of Applicatins, and Generalized Programming Patterns
+;; of Applications, and Generalized Programming Patterns
 ;;
 ;; - NB 'Any Type' declations in ASN.1
 ;; - NB "Strong typing" with ASN.1 in applications
+;; - NB Structure and Modularization in ASN.1 Protocol Definitions
