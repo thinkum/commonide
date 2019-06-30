@@ -175,7 +175,35 @@ The following concerns may also be addressed, in the CommonIDE project:
 **Concept:** Widget Signatures
 - **Concept:** Widget Signature Definition
 - **Concept:** Widget Signature Implementation
-- **Concept:** Widget Initialization
+- **Concept:** Widget Presentation Cycle - Allocation, Initialization,
+  Finalization, and Deallocation
+
+
+**Concepts - Misc**
+
+- Input/Editor Focus, Cognitive Focus, and Contextual Interface Definitions
+    - NB: "Wiget Framing" for input fields (Generally Forms-Oriented Semantics)
+    - NB: Input Focus and Textual Presentation Systems (Ed. NB: cf. CMU Sphinx)
+      (Ed. NB: cf. UI Accessibility - Guidelines, Advice, Ideal Practices)
+    - NB: "Application Logic" and Generally Forms-Oriented Semantics for
+      User Input
+
+- Programming Patterns - Callback-Oriented, Generally Asynchronous APIs
+    - TBD: General Programming Patterns for Event Loop Catch/Dispatch
+      Tasking - Normal Control Flows and Error Case Control Flows -
+      Implementation in Single-Threaded and Multi-Threaded Environments
+    - NB: Systems Specification and Systems Implementation - Concerns
+      for Design, Prototyping, Application, and QA with Portable User
+      Interface Definitions
+
+- Concepts of _Environment_ in Computing - Concepts of Definitions of
+  "Host," "Task," "System," and Generalized Evaluation for Discrete,
+  optionally "Template-Oriented" or "Macro-Like" Procedural Descriptions
+    - Formalized System Definitions - A Survey (abbreviated)
+    - Concept: Reusable "Task Patterns," Template Systems, and _The
+      Literature_ in _Formalized_ Pattern Definitions for Arbitrary
+      Systems Programming Environments (Ed. NB: See also, SIMULA)
+
 
 **Concept:** Towards a Generalized Interface for Development of
 Device-Neutral Widgets with Platform-Specific Implementations
@@ -195,20 +223,57 @@ Device-Neutral Widgets with Platform-Specific Implementations
     - In context, Garnet Gem and Garnet Opal systems - support for
       specific presentational environments with generalized _device_
       definitions
-        - X Window System instance as _device_ with Gem/Opal
-        - gworld and the Macintosh PC Desktop [Context:TechAnachronism]
+        - X Window System instance as generalized _device_ with
+          Gem/Opal; device implementation with XLib/CLX in Garnet (a
+          generalized pattern)
+        - gworld and the Macintosh PC Desktop [Context:TechArchives]
           (post-NeXT) with Gem/Opal
     - The underlying KR object system in Garnet
     - Fonts in Garnet
     - Pictures and Cursors in Garnet
     - Geometry and Garnet (Ed. NB: cf. _Garnetdraw_ demo)
     - Garnet Gadgets, Aggregadgets, Aggregraphs
+    - Interactors and Garnet - Garnet Gestures
+    - Adaptation of Garnet patterns to C++ - the Amulet Project
+      (originally at CMU)
+    - "Application Devo" Concerns - Garnet Documentation (Scribe Format)
 
-- Ed. NB: This proposal is directed for development with GTK+ (Desktop)
-  and ncurses (Generalized Console Environment) APIs, if not furthermore
-  for application of user interface toolkits on mobile platforms
-  (e.g Android w/ JNI, iOS w/ FFI and Apple Frameworks as may be available
-  in XCode development, and X with Hildon on Maemo [Context:TechAnachronism])
+- Topic: Generalizations for Generalized Console Environments - ncurses
+    - Topic: ncurses, _circa_ BSD and subsq.
+    - Topic: ncurses and readline, editline
+    - Topic: Object allocation, initialization/finalization, and
+      deallocation - Patterns onto Generalized APIs (ncurses, GTK+,
+      other) for External Objects in Common Lisp Programming Systems
+        - Ed. NB: "Also" Common Lisp Callback Functions for External
+          Object Systems - Definitions; Concerns for debugging (NB:
+          semantics for object file linking in C/C++/Obj-C and Common
+          Lisp implementation/compiler environments; semantics for call
+          stacks/frames in arbitrary architectures)
+    - Topic: Generalized presentational models with ncurses - screens,
+      tagged face/fonts, streams, [...]
+        - **Ed. NB:** UNIX PTY environments, console screen as a display surface
+        - Ed. NB, see also: tmux
+        - Ed. NB: Concept of "Taggged" fonts is affected after some
+          albeit superficial features of GTK+ APis
+    - Topic: Generalized Application-Independent APIs and the Host OS
+      Environment (Files, I/O, ...)
+    - Topic: "Higher-Order" User Interface Concerns - Programmed
+      Completion for Symbols in Abtirary Generalized Naming Contexts
+
+- Ed. NB: This topic is directed principally for portable application
+  development with GTK+ (PC Desktop) and ncurses (Generalized Console
+  Environment) APIs. It may also be considered with regards to
+  application development for user interface toolkits on mobile
+  platforms -- e.g: Android w/ JNI for user interface APIs in the
+  Android Runtime Environment, Android application process environment,
+  Android libc (e.g Bionic), and OpenGL for abitrary GPUs on Android
+  devices; iOS w/ FFI and Apple Frameworks, such as may be available
+  typically in XCode development environments; X with Hildon on Maemo
+  devices (cf. Nokia) [Context:TechArchives]. The concept of developing
+  a user interface system for singularly audal output and arbitrary
+  key/cursor or text-to-speech input (e.g Accessible Design w/ CMU
+  Sphinx) may be addressed, in some regards, in parallel to this
+  design.
 
 
 ### CommonIDE - Concepts of Design - Editor Views
@@ -329,26 +394,29 @@ graphical applications using GTK+
           regards to application of widget ID and widget name values in
           the Glade editor, and in applications extending **libglade**)
 
-    - Note and linking between UI layout elements, program source
-      elements, and application data elements, such as vis a vis:
+    - Note concerns for contextual identification and linking between UI
+      layout elements, program source elements, and application data
+      elements, such as vis a vis:
 
         - Function names for callback event declarations in the Glade
-          interface definition. These function names would be, in
-          effect, closed onto the set of symbols defined within an
-          application's distribution -- such that should match the set of
-          symbols defined in the application development _environment_
+          interface definition (GTK+ with libglade2 or
+          GtkBuilder). These function names would be, in effect, closed
+          onto the set of symbols defined within an application's
+          distribution -- such that should match the set of symbols
+          defined in the application development _environment_
 
         - Widget names, with similar closure.
 
-        - Stylesheet (??) declarations
+        - Stylesheet (??) declarations (GTK+ with ligblade2 or GtkBuilder)
 
         - Translatable Strings and Translation Specifications
 
             - See also: The Okapi project
 
         - Desktop resource definitions, _vis a vis_ effective standards
-          published at freedesktop.org (FDO) insofar as may pertain to
-          development and distribution of desktop applications
+          under XDG, published at freedesktop.org (FDO) insofar as may
+          pertain to development and distribution of applications in
+          desktop application/service environments.
 
 3. Application of the UI Builder Layout, in any one or more discrete
    application environments
@@ -380,13 +448,9 @@ graphical applications using GTK+
  -->
 <!--  LocalWords:  thinkum contrib Gitlab GtkSocket GtkPlug LLVM JIT
  -->
-<!--  LocalWords:  CLIM presentational gworld TechAnachronism NeXT JNI
+<!--  LocalWords:  CLIM presentational gworld TechArchives NeXT JNI
  -->
 <!--  LocalWords:  Garnetdraw ABI bytecode Aggregadgets Aggregraphs
  -->
 <!--  LocalWords:  ncurses toolkits XCode Hildon Maemo
  -->
-
-<!-- Local Variables: -->
-<!-- ispell-buffer-session-localwords: ("Aggregadgets" "Aggregraphs" "Garnetdraw" "Hildon" "JNI" "Maemo" "NeXT" "TechAnachronism" "XCode" "bytecode" "gworld" "ncurses" "presentational" "toolkits") -->
-<!-- End: -->
