@@ -221,3 +221,64 @@
   ;; => "a-a", #\-
 
 )
+
+
+;; ----
+
+;; NB This system may reuse the DEFSIGNATURE/DEFIMPLEMENTATION protocol,
+;; as presently being developed in support for a portable API for
+;; mutually exclusive and modal (R/W) locking in concurrent
+;; applications, in the LTP-Main source repository vis. defportable.lisp
+
+#+TBD
+(defsignature module (TBD)
+  ;; NB towards DEFIMPLEMENTATION MODULE (TBD^2) - Expected Usage Cases
+  ;; - Internal representation for ASN.1, in this system
+  ;; - Interoperability for the internal representation, pursuant of
+  ;;   support for representational models in individual ASN.1
+  ;;   processing tools - generally denoted as ASN.1 compilers - and
+  ;;   subsequent FFI integration for ASN.1 toolchains with individual,
+  ;;   generalized abstract syntax specifications (NB: SNMP; X.509;
+  ;;   LDAP Schema; ...)
+  ;; - Support for systems modeling and source editing for ASN.1
+  ;;   declarations, in CommonIDE - NB, Generalized IPC (Usage Case) in
+  ;;   the CommonIDE source system, and (Usage Case) support for
+  ;;   applications of generalized abstract syntaxes (after a manner of
+  ;;   ITU-T Recommendation X.216) principally extending ASN.1, in other
+  ;;   software projects.
+  (:prototype-slots
+   ;; NB: Exact syntax TBD - DEFSIGNATURE
+   (oid
+    :type asn.1-oid
+    :access (:read))
+   (imports
+    ;; TBD: Support for interactive evaluation - modification of module
+    ;; import declarations during runtime
+    ;;
+    ;; TBD: Support for unparsing the intermediate representation of
+    ;; ASN.1 lexical elements
+
+    ;; NB: Refer to ITU-T Recommendation X.680 (08/2015) for
+    ;; clarification after footnotes in [Dubuisson2000] as with regards
+    ;; to the present state of support for module import declarations in
+    ;; ASN.1 module definitions
+    )
+   (tagging-policy
+    ;; TBD: ENUM types in internal representation - generalized IR
+    ;; infrastructure for ASN.1 in this system's internal representation
+    ;;
+    ;; Refer to ITU-T Recommendation X.680 (08/2015)
+    :access (:read)
+    :type module-tagging-policy)
+   (definitions
+       ;; TBD - refer to annotations under the IMPORTS prototype field
+       ;;
+       ;; NB Usage Cases
+       ;; - Generalized evaluation of ASN.1 source forms, in arbitrary
+       ;;   source systems
+       ;; - Programmed evaluation, in implememtation per ASN.1 declarations
+       ;; - Lexical evaluation, pursuant towards representation of ASN.1
+       ;;   source systems in a manner after philosophies of Literate
+       ;;   Programming and Systems Analysisx
+       :type iterable-field ;; TBD. See also, ISI PowerLoom(R) - STELLA language
+       )))
