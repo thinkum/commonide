@@ -192,9 +192,17 @@ The following concerns may also be addressed, in the CommonIDE project:
     - TBD: General Programming Patterns for Event Loop Catch/Dispatch
       Tasking - Normal Control Flows and Error Case Control Flows -
       Implementation in Single-Threaded and Multi-Threaded Environments
+    - **Topic:** Assuming _zero or one_ of an interactive _Forergound
+      Task_, registration and sequential dispatching for any _zero or
+      more_ active _Background Task_, in a single-threaded manner of
+      finite state machine for generalized _Task_ evaluation;
+      generalization for support in non-interactive applications;
+      generalizations for support in interactive and non-interactive
+      multi-threaded applications.
     - NB: Systems Specification and Systems Implementation - Concerns
       for Design, Prototyping, Application, and QA with Portable User
       Interface Definitions
+
 
 - Concepts of _Environment_ in Computing - Concepts of Definitions of
   "Host," "Task," "System," and Generalized Evaluation for Discrete,
@@ -204,16 +212,90 @@ The following concerns may also be addressed, in the CommonIDE project:
       Literature_ in _Formalized_ Pattern Definitions for Arbitrary
       Systems Programming Environments (Ed. NB: See also, SIMULA)
 
+----
+
+- Concept: IDE as a Task Support Interface for Formalized Tasks
+
+**Ed. NB: The following sections are known to need further clarification**
+
+- TBD: Project Definitions and Project Support
+    - Concept: _Project_ as a singularly User-Specific Concept
+
+- TBD: Generalized support for REPL and UNIX shell interaction w/i
+  ncurses environments; Generalizations in CommonIDE Terminal Widget API
+    - Minimum functionality - non-trivial for portable
+      implementation. buffering for strings input (forms, cmds) and
+      input history cf. readline/editline, with some assumptions about
+      I/O syntax; see also, GTK+
+    - TBD: eval w/ Lisp Peer/Eval-over-Wire. e.g fork() and start-IPC or
+      fork(), exec(), start-lisp + start-IPC; IPC (UNIX) and
+      eval-over-wire protocols - protocol transports, protocol data
+      units, and protocol peer models; API generalization, independent
+      of any available display environment; NB UNIX signals, e.g used
+      generally in manners of shell-oriented methods of process/job
+      control (SIGCONT and related) in UNIX console systems, UNIX
+      streams I/O; concerns for implementation of sequential, local
+      dispatch for synchronous and asynchronous eval-over-wire protocol
+      requests with a "Forked Lisp" or "Fork/Exec'd Lisp" process in a
+      single-threaded environment (General pattern: send eval-over-write
+      request; block for synchronous request, or create a background
+      task for asynchronous request, then resuming dispatch-foreground,
+      the background task subsequently pollling for receiving an
+      asynchronous eval-over-wire response matching the task descriptor
+      of the original request; note that the concerns for
+      single-threaded evaluation would be limited to the "Foreground
+      Lisp", insofar as from a perspective of the "Foreground
+      application" - considering that a POSIX/UNIX environment may
+      provide for running multiple simultaneous OS processes, regardless
+      of any adoption of threading support in any individual process);
+      TBD: Functional (non-polymorphic) protocol specification for
+      dual-peer systems, with ASN.1 -- function descriptors (??) -- with
+      extension onto CLOS/MOP frameworks, and framework support for
+      GSS-API in any network-transport implementation; I/O management
+      for eval-over-wire (NB: Local streams I/O, representative of eval
+      in a remote peered Lisp) (TBD: stdio bindings for peer PTY streams, on
+      fork/exec, in UNIX-like shell applications - NB generalized UNIX
+      PTY application models, streams and strings _vis a vis_
+      shell/subshell exec() interactively) with ncurses, GTK+ (CommonIDE
+      terminal widget - GTK+), other display surfaces
+   - TBD: Object-Semantic output processing w/ wrapped methods (e.g
+      :AROUND onto PRINT-OBJECT) for any single _display surface_ or
+      _text to speech schema_
+    - TBD: Debugger integration - activation per *DEBUGGER-HOOK*;
+      restart handling; integration with REPL streams
+
+**Ed. NB: The main content of this document resumes, subsequently**
+
+----
 
 **Concept:** Towards a Generalized Interface for Development of
 Device-Neutral Widgets with Platform-Specific Implementations
 
-- Ed. NB: Juxtapose to some features of CLIM
-    - CLIM Streams model (for graphical applications in desktop environments?)
-    - CLIM Input Recording - Input Capture and Playback as a Generalized "Undo"
-    - CLIM Abstract Widget Model - as a highlight of the generalized
-      CLIM/CLIM2 Framework
-    - Generalized Accept/Present Flow in CLIM (Ed. NB, see also: Expect)
+- Topic: _**Application** Specification_; Application Implementation;
+  Application Support
+
+- Topic: Platform/Framework Specification; Implementation; Application
+  Support
+    - NB: FFI in Generalized Implementations - Common Lisp implementations
+    - TBD: Platform/Framework Modeling for Platform/Framework
+      Specifications
+        - NB, see also: Knuth's WEB
+        - NB, GIR in GNOME
+        - NB, compiler-level modeling for C applications with Clang AST,
+          LLVM JIT APIs (assuming an absence of Itanium ABI support for
+          C++ in most Common lisp implementations)
+
+- Topic: "Beyond the Widget Model" - Application integration for
+  platform services in arbitrary application environments (GNOME; other)
+
+- Ed. NB: Juxtapose, in design, to features of CLIM/CLIM2 - Topics e.g
+    - CLIM streams model (TBD: CLIM/CLIM2 Streams - applications for
+      graphical user interfaces in desktop environments)
+    - CLIM input recording - input capture and playback as a generalized "Undo"
+    - CLIM abstract widget framework - as a highlighted feature of the
+      generalized CLIM/CLIM2 framework
+    - Generalized Accept/Present flow in CLIM/CLIM2 (Ed. NB, see also:
+      Expect @ UNIX console systems)
     - Fonts in CLIM
     - Pictures in CLIM
     - Geometry and CLIM
@@ -233,9 +315,9 @@ Device-Neutral Widgets with Platform-Specific Implementations
     - Pictures and Cursors in Garnet
     - Geometry and Garnet (Ed. NB: cf. _Garnetdraw_ demo)
     - Garnet Gadgets, Aggregadgets, Aggregraphs
-    - Interactors and Garnet - Garnet Gestures
-    - Adaptation of Garnet patterns to C++ - the Amulet Project
-      (originally at CMU)
+    - Interacting with Garnet Applications - Garnet Interactors; Garnet Gestures
+    - Adapting Garnet patterns to C++ - the Amulet Project (originally
+      at CMU)
     - "Application Devo" Concerns - Garnet Documentation (Scribe Format)
 
 - Topic: Generalizations for Generalized Console Environments - ncurses
@@ -271,9 +353,8 @@ Device-Neutral Widgets with Platform-Specific Implementations
   typically in XCode development environments; X with Hildon on Maemo
   devices (cf. Nokia) [Context:TechArchives]. The concept of developing
   a user interface system for singularly audal output and arbitrary
-  key/cursor or text-to-speech input (e.g Accessible Design w/ CMU
-  Sphinx) may be addressed, in some regards, in parallel to this
-  design.
+  key/cursor or speech-to-text input may be addressed, in some regards,
+  in parallel to the principally visual aspetcs of this design.
 
 
 ### CommonIDE - Concepts of Design - Editor Views
