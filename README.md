@@ -169,6 +169,7 @@ The following concerns may also be addressed, in the CommonIDE project:
   framework.
 
 
+----
 
 ### CommonIDE - Concepts of Design - Generalized Widgets
 
@@ -211,6 +212,58 @@ The following concerns may also be addressed, in the CommonIDE project:
     - Concept: Reusable "Task Patterns," Template Systems, and _The
       Literature_ in _Formalized_ Pattern Definitions for Arbitrary
       Systems Programming Environments (Ed. NB: See also, SIMULA)
+
+----
+
+- Concepts of _Component_ in Generalized Editor Applications
+
+    - **StarSuite/StarOffice and UNO** - UNO Runtime Environment (URE)
+      as an editor component environment (whether installed from
+      development source code, or installed at end-user systems); UNO
+      IDL as a generalization after CORBA IDL support in GNOME ORBit;
+      note support for languages other than C++ in UNO
+
+    - **Netscape and XUL** - under a gernalized context, support for
+      application development wiht HTML, JavaScript, and the Browser
+      Envrionment; NB: RDF in XUL application descriptions;  XPCOM as a
+      _framework_ for integration, principally, of C++ software components
+      in extension to the browser environment; XPIDL for XPCOM as a
+      second generalization after GNOME ORBit; XUL at Nestscape -
+      subsequently, at Mozilla, to a series of source code revision in
+      which XUL was in effect abandoned by Mozilla development
+
+    - **GTK+ and GNOME Object Introspection** (GIR) - note GIR in GNOME
+      Vala support; note gtkmm in GNOME components; GNOME VTE as a
+      terminal emulator component, available for GNOME applications -
+      uses gtkmm, furthermore providing interface declarations via GIR,
+      such as may be known to be reusable for linkage from Vala
+      applications. Note limitations for C++ applications in some
+      programming language environments - in reference to the
+      contemporary definition of the Itanium ABI, if not furthermore,
+      in reference to definitions of the OS runtime linker for hardware
+      architectures supported in individual UNIX kernel environments.
+
+    - **Eclipse RCP** as an architecture for _IDE development_ with
+      Eclipse IDE applciations in Java(R) platforms; note extensions of
+      the Eclipse Platform, in Modelio and other software systems
+
+
+    - Ed. NB, juxtapose to: **_Project_ Components** -- i.e as may be
+      developed by projects using an IDE, rather than _per se_
+      developed for the IDE implementation, itself.
+
+
+- Editor Applications, System Tooling, and the IDE Environment
+
+    - Note that not all tools used in a development environment may be
+      bundled with the IDE, itself.
+
+    - Note generalizations for external _shell command_ evaluation, as
+      may be represented in components of the Eclipse IDE platform
+
+    - Note generalizations for formalized patterns in shell command
+      evaluation, _vis a vis_ Make systems (GNU Make, bmake, CMake, Ant,
+      Maven, Ivy, ...)
 
 ----
 
@@ -356,6 +409,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
   key/cursor or speech-to-text input may be addressed, in some regards,
   in parallel to the principally visual aspetcs of this design.
 
+----
 
 ### CommonIDE - Concepts of Design - Editor Views
 
