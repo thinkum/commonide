@@ -412,6 +412,136 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
 ----
 
+### CommonIDE - Concepts of Design - Source Management Support
+
+- NB: LTP-Main `defportable.lisp` - `DEFSIGNATURE` and
+  `DEFIMPLEMENTATION` PROTOTYPES
+
+- NB Usage Cases for Source Mangement - LTP-Main `BASE-CLASS`
+  development
+
+    - Note development of the  WRITE-REFERENCE-EXPRESSION feature
+      subset, during protoyping for development of the `BASE-CLASS`
+      implementation.
+
+    - Note interaction within the LTP-Main source repository - e.g some
+      source forms defined in the `ltp-common` system had found their
+      principal origins in other effective components within the
+      `LTP-Main` source repository.
+
+- Note concepts of Scrum development philosophy
+
+    - The Scrum Sprint
+
+        - Sprint Planning/Sprint Teams, in Formalized Project Models
+
+        - Source Management and Systems Documetation, Post-Sprint
+
+- Concept: Systems Testing as a Feature of Source Management
+
+- Topic: Infrastructural dependencies of typically "Web-Based" QA Systems
+
+    - e.g GitHub - Outsourced Service Hosting, with Normal Service
+      Protocols, _vis a vis_ GitHub HTTP and JSON (entailing, in at
+      least, site management and/or personal management of development
+      credentials, insofar as pursuant towards interacting with GitHub
+      services)
+
+    - e.g Phabricator - Site-Sourced Service Hosting, with Outsourced
+      (FOSS) Software Components (also HTTP-based, moreover Web-Oriented
+      in general features of service presentation)
+
+    - e.g Generally, "Other" Systems and Infrastructure Dependencies
+
+        - TBD: Visio as generally a Microsoft Infrastrucrure component,
+          not _per se_ a "Web" Infrastructure Component.
+
+    - Note, "Small Site" development projects may ideally be supported
+      with QA tooling not requiring a substantial IT management
+      infrastructure
+
+        - NB: Opinions may vary, by site, as with regards to a
+          hypothetical question: Does an infrastructure based
+          principally on HTTP, DBMS, SMTP, and --  as though
+          intrinsically -- Web Browser services entail a "Substantial"
+          manner of IT Management Infrastructure?
+
+        - NB: "Outsourced Infrastructure" is nonetheless,
+          Infrastructure -- e.g in service outsourcing to GitHub, or in
+          software development outsourcing, in a manner, using any
+          combination of FOSS software components and commercially
+          licensed software components. As such, even the adoption of an
+          "Outsourced Infrastructrure," in any singular regard, may
+          entail any number of processes requiring a manner of
+          infrastructure management, generally regardless of the nature
+          of the, _per se_, "Outsourcing"
+
+        - Note the generally "light" systems footprint of the original
+          GNATS QA system - however subsequently displaced with e.g
+          Bugzilla. Note also, GNATS uses a manner of a database
+          service, albeit typically limited to embedded database
+          appliations with Berkeley DB (NB: Berkeley DB is now
+          principally as a holding of the Oracle company, subsequent of
+          the corporate acquisition of Sun Microsystems and the -- in
+          effect -- erasure of the Sun Microsystems brand name, by
+          Oracle)
+
+        - Note the generalized QA model presented by way of e.g the
+          Eclipse Mylyn projects - however supported, singularly, with
+          Java softare infrastructure components (NB: Thus, once again,
+          the Oracle brand name has a presence, subsequent of the
+          erasure of the Sun Microsystems brand name, by Oracle. However
+          this might be assumed to be regarded in any typically
+          corporate circles, a project may adopt a general goal of
+          avoiding works now singularly owned -- owned, in, at the
+          least, owned in terms of branding and whatsoever with regards
+          to formal terms of software systems licensing -- and
+          whatsoever managed under the Oracle company. The lawsuit filed
+          against Google, by Oracle, may also be considered as a manner
+          of incentive towards such a policy..)
+
+        - Thus, in a remark, even a Java software infrastructure is,
+          nonetheless, an infrastructure -- in any manner, with regards
+          to pedagogic defintiions of IT -- an infrastructure, entailing
+          some discrete systems management tasks. (**Ed NB:** Moreover,
+          at some IT sites, it may be construed as an infrastructure to
+          avoid -- perhaps, not only due to the particular management of
+          the Java brand name and the effective erasure of the Sun
+          Microsystems brnd name, subsequent of Sun Microsystems'
+          acquisition by Oracle, furthemore due to concerns with regards
+          to the very infrastructure-intensive nature of server-side
+          Java software applications, at many of a "Web Scale" in
+          service development and service application hosting. If only
+          due to the memory requirements for Java web service
+          applications, juxtaposed to the limits presented in numerous
+          cloud hosting options, it may simply not be practical to adopt
+          Java web services, at many sites outside of any manner of
+          "Enterprise Market." If an infrastructure requiring HTTP, SSL,
+          SMTP, DBMS, and PHP or Python services may be consiered,
+          alternately, but if it may be possible to define an even more
+          light-footprint infrastructure, using - by in large - a
+          significant number of existing software components, then that
+          approch might be most favorable for support of small site
+          development -- e.g reusing OpenSSL, Git, and any number of
+          data management tools for arbitrary data encoding syntaxes,
+          e.g JSON or XML, as with regards to encoding, mangement, and
+          application of project management metadata in automated
+          workflow support tools not singularly depending on any lot of
+          IT infrastructure)
+
+        - Ideally, an IDE may be developed as to support, principally,
+          systems management tasks -- with or without regards to any
+          singular models, broadly, models of concepts of systems and
+          management, in any singular mode of pedagogy.
+
+        - Thus, perhaps the development of an IDE's support for systems
+          management may be addressed, at the outset, with a skeptical
+          regard for pedagogic definitions of Systems and Management. It
+          may not be assumed, inasmuch, that any single model for
+          systems management may be either formally ascertained or
+          formally adopted, at every site.
+
+
 ### CommonIDE - Concepts of Design - IDE UI - Editor Views
 
 (...)
