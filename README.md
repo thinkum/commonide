@@ -311,6 +311,7 @@ The following concerns may also be addressed, in the CommonIDE project:
       PTY application models, streams and strings _vis a vis_
       shell/subshell exec() interactively) with ncurses, GTK+ (CommonIDE
       terminal widget - GTK+), other display surfaces
+   - NB: LTP-Main - `defportable.lisp`
    - TBD: Object-Semantic output processing w/ wrapped methods (e.g
       :AROUND onto PRINT-OBJECT) for any single _display surface_ or
       _text to speech schema_
@@ -411,12 +412,12 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
 ----
 
-### CommonIDE - Concepts of Design - Editor Views
+### CommonIDE - Concepts of Design - IDE UI - Editor Views
 
 (...)
 
 
-### CommonIDE - Concepts of Design - Project Views
+### CommonIDE - Concepts of Design - IDE UI - Project Views
 
 (...)
 
