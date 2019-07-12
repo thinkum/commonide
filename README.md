@@ -568,6 +568,18 @@ Device-Neutral Widgets with Platform-Specific Implementations
                   User Data -- Generally, "Graph Data" -- as Private
                   Model Data.
 
+                    - Topic: Common Characteristics of Knowledge
+                      Representation Languages
+
+                        - Topic: Generally declarative semantics
+
+                        - Topic: General applications of predicate logic
+
+                        - Topic: Knowledge Representation System as an
+                          Information System - Towards a Service-Oriented
+                          Approach in Applications of Knowledge
+                          Representation Systems
+
                     - NB: The User and RDF - Extending RDF Schema for
                       Applications; Extensibility of Application
                       Schema; Formalisms for Licensing, Distribution,
@@ -633,6 +645,16 @@ Device-Neutral Widgets with Platform-Specific Implementations
               to OMG MOF) secondly, DMTF RedFish (NB: JSON Notations),
               _vis a vis_ Known Conventions in Systems Modeling and
               Systems Management.
+
+        - Topic: General Implementation Concerns
+
+            - NB: librdf/redland may not provide support for RDFS
+              inference. See also: owlcpp
+
+            - TBD: Common Logic implementations
+
+            - NB ISI PowerLoom(R) - PL STELLA - Implementations (Common
+              Lisp, C++, Java, ...)
 
     - Topic: Authorship, Publishing, and Accession for Applications of
       Modeling Systems - Model Schema, and  Model Data - for Knowledge
