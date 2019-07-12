@@ -183,7 +183,7 @@ The following concerns may also be addressed, in the CommonIDE project:
 **Concepts - Misc**
 
 - Input/Editor Focus, Cognitive Focus, and Contextual Interface Definitions
-    - NB: "Wiget Framing" for input fields (Generally Forms-Oriented Semantics)
+    - NB: "Widget Framing" for input fields (Generally Forms-Oriented Semantics)
     - NB: Input Focus and Textual Presentation Systems (Ed. NB: cf. CMU Sphinx)
       (Ed. NB: cf. UI Accessibility - Guidelines, Advice, Ideal Practices)
     - NB: "Application Logic" and Generally Forms-Oriented Semantics for
@@ -193,7 +193,7 @@ The following concerns may also be addressed, in the CommonIDE project:
     - TBD: General Programming Patterns for Event Loop Catch/Dispatch
       Tasking - Normal Control Flows and Error Case Control Flows -
       Implementation in Single-Threaded and Multi-Threaded Environments
-    - **Topic:** Assuming _zero or one_ of an interactive _Forergound
+    - **Topic:** Assuming _zero or one_ of an interactive _Foreground
       Task_, registration and sequential dispatching for any _zero or
       more_ active _Background Task_, in a single-threaded manner of
       finite state machine for generalized _Task_ evaluation;
@@ -223,9 +223,9 @@ The following concerns may also be addressed, in the CommonIDE project:
       IDL as a generalization after CORBA IDL support in GNOME ORBit;
       note support for languages other than C++ in UNO
 
-    - **Netscape and XUL** - under a gernalized context, support for
-      application development wiht HTML, JavaScript, and the Browser
-      Envrionment; NB: RDF in XUL application descriptions;  XPCOM as a
+    - **Netscape and XUL** - under a generalized context, support for
+      application development with HTML, JavaScript, and the Browser
+      Environment; NB: RDF in XUL application descriptions;  XPCOM as a
       _framework_ for integration, principally, of C++ software components
       in extension to the browser environment; XPIDL for XPCOM as a
       second generalization after GNOME ORBit; XUL at Nestscape -
@@ -244,7 +244,7 @@ The following concerns may also be addressed, in the CommonIDE project:
       architectures supported in individual UNIX kernel environments.
 
     - **Eclipse RCP** as an architecture for _IDE development_ with
-      Eclipse IDE applciations in Java(R) platforms; note extensions of
+      Eclipse IDE applications in Java(R) platforms; note extensions of
       the Eclipse Platform, in Modelio and other software systems
 
 
@@ -293,7 +293,7 @@ The following concerns may also be addressed, in the CommonIDE project:
       single-threaded environment (General pattern: send eval-over-write
       request; block for synchronous request, or create a background
       task for asynchronous request, then resuming dispatch-foreground,
-      the background task subsequently pollling for receiving an
+      the background task subsequently polling for receiving an
       asynchronous eval-over-wire response matching the task descriptor
       of the original request; note that the concerns for
       single-threaded evaluation would be limited to the "Foreground
@@ -390,11 +390,11 @@ Device-Neutral Widgets with Platform-Specific Implementations
         - **Ed. NB:** UNIX PTY environments, console screen as a display surface
         - Ed. NB, see also: tmux
         - Ed. NB: Concept of "Taggged" fonts is affected after some
-          albeit superficial features of GTK+ APis
+          albeit superficial features of GTK+ APIs
     - Topic: Generalized Application-Independent APIs and the Host OS
       Environment (Files, I/O, ...)
     - Topic: "Higher-Order" User Interface Concerns - Programmed
-      Completion for Symbols in Abtirary Generalized Naming Contexts
+      Completion for Symbols in Arbitrary Generalized Naming Contexts
 
 - Ed. NB: This topic is directed principally for portable application
   development with GTK+ (PC Desktop) and ncurses (Generalized Console
@@ -402,13 +402,13 @@ Device-Neutral Widgets with Platform-Specific Implementations
   application development for user interface toolkits on mobile
   platforms -- e.g: Android w/ JNI for user interface APIs in the
   Android Runtime Environment, Android application process environment,
-  Android libc (e.g Bionic), and OpenGL for abitrary GPUs on Android
+  Android libc (e.g Bionic), and OpenGL for arbitrary GPUs on Android
   devices; iOS w/ FFI and Apple Frameworks, such as may be available
   typically in XCode development environments; X with Hildon on Maemo
   devices (cf. Nokia) [Context:TechArchives]. The concept of developing
   a user interface system for singularly audal output and arbitrary
   key/cursor or speech-to-text input may be addressed, in some regards,
-  in parallel to the principally visual aspetcs of this design.
+  in parallel to the principally visual aspects of this design.
 
 ----
 
@@ -417,11 +417,11 @@ Device-Neutral Widgets with Platform-Specific Implementations
 - NB: LTP-Main `defportable.lisp` - `DEFSIGNATURE` and
   `DEFIMPLEMENTATION` PROTOTYPES
 
-- NB Usage Cases for Source Mangement - LTP-Main `BASE-CLASS`
+- NB Usage Cases for Source Management - LTP-Main `BASE-CLASS`
   development
 
     - Note development of the  WRITE-REFERENCE-EXPRESSION feature
-      subset, during protoyping for development of the `BASE-CLASS`
+      subset, during prototyping for development of the `BASE-CLASS`
       implementation.
 
     - Note interaction within the LTP-Main source repository - e.g some
@@ -435,7 +435,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
         - Sprint Planning/Sprint Teams, in Formalized Project Models
 
-        - Source Management and Systems Documetation, Post-Sprint
+        - Source Management and Systems Documentation, Post-Sprint
 
 - Concept: Systems Testing as a Feature of Source Management
 
@@ -453,7 +453,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
     - e.g Generally, "Other" Systems and Infrastructure Dependencies
 
-        - TBD: Visio as generally a Microsoft Infrastrucrure component,
+        - TBD: Visio as generally a Microsoft Infrastructure component,
           not _per se_ a "Web" Infrastructure Component.
 
     - Note, "Small Site" development projects may ideally be supported
@@ -471,7 +471,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
           software development outsourcing, in a manner, using any
           combination of FOSS software components and commercially
           licensed software components. As such, even the adoption of an
-          "Outsourced Infrastructrure," in any singular regard, may
+          "Outsourced Infrastructure," in any singular regard, may
           entail any number of processes requiring a manner of
           infrastructure management, generally regardless of the nature
           of the, _per se_, "Outsourcing"
@@ -480,7 +480,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
           GNATS QA system - however subsequently displaced with e.g
           Bugzilla. Note also, GNATS uses a manner of a database
           service, albeit typically limited to embedded database
-          appliations with Berkeley DB (NB: Berkeley DB is now
+          applications with Berkeley DB (NB: Berkeley DB is now
           principally as a holding of the Oracle company, subsequent of
           the corporate acquisition of Sun Microsystems and the -- in
           effect -- erasure of the Sun Microsystems brand name, by
@@ -488,7 +488,7 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
         - Note the generalized QA model presented by way of e.g the
           Eclipse Mylyn projects - however supported, singularly, with
-          Java softare infrastructure components (NB: Thus, once again,
+          Java software infrastructure components (NB: Thus, once again,
           the Oracle brand name has a presence, subsequent of the
           erasure of the Sun Microsystems brand name, by Oracle. However
           this might be assumed to be regarded in any typically
@@ -502,13 +502,13 @@ Device-Neutral Widgets with Platform-Specific Implementations
 
         - Thus, in a remark, even a Java software infrastructure is,
           nonetheless, an infrastructure -- in any manner, with regards
-          to pedagogic defintiions of IT -- an infrastructure, entailing
+          to pedagogic definitions of IT -- an infrastructure, entailing
           some discrete systems management tasks. (**Ed NB:** Moreover,
           at some IT sites, it may be construed as an infrastructure to
           avoid -- perhaps, not only due to the particular management of
           the Java brand name and the effective erasure of the Sun
-          Microsystems brnd name, subsequent of Sun Microsystems'
-          acquisition by Oracle, furthemore due to concerns with regards
+          Microsystems brand name, subsequent of Sun Microsystems'
+          acquisition by Oracle, furthermore due to concerns with regards
           to the very infrastructure-intensive nature of server-side
           Java software applications, at many of a "Web Scale" in
           service development and service application hosting. If only
@@ -517,14 +517,14 @@ Device-Neutral Widgets with Platform-Specific Implementations
           cloud hosting options, it may simply not be practical to adopt
           Java web services, at many sites outside of any manner of
           "Enterprise Market." If an infrastructure requiring HTTP, SSL,
-          SMTP, DBMS, and PHP or Python services may be consiered,
+          SMTP, DBMS, and PHP or Python services may be considered,
           alternately, but if it may be possible to define an even more
           light-footprint infrastructure, using - by in large - a
           significant number of existing software components, then that
-          approch might be most favorable for support of small site
+          approach might be most favorable for support of small site
           development -- e.g reusing OpenSSL, Git, and any number of
           data management tools for arbitrary data encoding syntaxes,
-          e.g JSON or XML, as with regards to encoding, mangement, and
+          e.g JSON or XML, as with regards to encoding, management, and
           application of project management metadata in automated
           workflow support tools not singularly depending on any lot of
           IT infrastructure)
@@ -540,6 +540,142 @@ Device-Neutral Widgets with Platform-Specific Implementations
           may not be assumed, inasmuch, that any single model for
           systems management may be either formally ascertained or
           formally adopted, at every site.
+
+- Topic: Project Support, User Opacity, Data Privacy, and Data Management Systems
+
+    - Design Documentation - Philosophy of Design - Term as an External
+      Representation of a Cognitive Concept
+
+        - Consequently, _Term_ as an intrinsically imperfect
+          representation of a _Concept_
+
+        - NB: Concerning Social Dynamics, "Terminology as Gesture"
+
+        - Topic: Representation of Terms and Terminological Associations
+
+            - Topic: Notational Representation of Terms and
+              Terminological Associations
+
+                - TBD: Formal _Terms_ and _Terminological Associations_ as
+                  Generalized Expressions Closed Onto a Formal Data
+                  System.
+
+                - Topic: Notation (e.g vis a vis RDF) as Generalized
+                  Vocabulary; Model (e.g in application of any single
+                  RDF notation) as Generalized Schema; User Data
+                  (e.g in application of any form of generalized RDF
+                  schema or model) as Schema Reification. Furthermore,
+                  User Data -- Generally, "Graph Data" -- as Private
+                  Model Data.
+
+                    - NB: The User and RDF - Extending RDF Schema for
+                      Applications; Extensibility of Application
+                      Schema; Formalisms for Licensing, Distribution,
+                      and Accession of Generalized Term Sets; Privacy of
+                      Model Data.
+
+                    - TBD: The User and RDF - Privacy, Opacity,
+                      Publishing, and Accession for User-Developed RDF
+                      Models, User-Governed RDF Graph Data, and
+                      User-Developed Analytical and Narrative Content.
+
+                - Topic: Generally Well Known Notations
+
+                    - Topic: Terms and Relations in Common Logic CLIF
+
+                    - Topic: Terms and Relations in RDF Notations
+
+                    - Topic: Terms and Relations  in ISI PowerLoom(R) -
+                      PowerLoom KB Expressions
+
+                    - TBD: Terms and Relations in MOF, UML and SysML
+                      Applications
+
+            - Topic: Visual Representation of Terms and Terminological
+              Associations
+
+                - Topic: Visual Representation of Terms and Relations in
+                  Common Logic CGIF
+
+                - Topic: Visual Representation of Terms and Relations in
+                  the ODM Metamodel and ODM UML Profile for RDF
+
+                - TBD: Garnet Aggregraphs and PowerLoom(R) - Prototype
+                  for a Generalized Diagrammatic, Interactive Knowledge
+                  Modeling Application (Desktop Environments vis. CLX)
+                  (TBD: Garnet - Garnet Gem and Opal -  device bindings
+                  for Mobile Environments)
+
+                - NB: Generally "Diagram-Oriented" Semantics for Visual
+                  Representation with UML and SysML; Infrastructural
+                  Characteristics of MOF and OCL (see also: VDM, ....)
+
+            - TBD: UML and SysML in Knowledge Representation
+
+                - NB: Visual Representation of UML and SysML Models -
+                  Generalized Diagram Semantics in UML and SysML, with
+                  Effective Diagram Syntax Constraints
+
+                - TBD: Notational Interoperability for SysML and UML,
+                  onto RDF - XML Schema in XMI and RDF Notations;
+                  Representation of MOF, SysML and UML Terms onto RDF;
+                  SysML and UML Diagrams onto RDF; OCL, XMI, and RDF
+
+            - TBD: Other Diagram Frameworks - SDL and TTCN onto ASN.1;
+              ECMA Flowcharts; ....
+
+        - TBD: Procedural Applications for Normal, Declarative
+          Terminological/Associative Vocabularies - Systems Management
+          with Discrete System Entity Models (Beyond Query Construction)
+          in an RDF Notation
+
+            - TBD: Juxtaposition to DMTF CIM and DMTF MOF (NB: Distinct
+              to OMG MOF) secondly, DMTF RedFish (NB: JSON Notations),
+              _vis a vis_ Known Conventions in Systems Modeling and
+              Systems Management.
+
+    - Topic: Authorship, Publishing, and Accession for Applications of
+      Modeling Systems - Model Schema, and  Model Data - for Knowledge
+      Representation
+
+    - Topic: Towards a Generalized Schema for Knowledge Representation
+      in Project Management Support Environments
+
+        - Topic: _Project_ as a Terminological Entity with Social
+          Representation
+
+            - TBD: "Defining the Existential Authority" - Project
+              Representation in Distributed Environments
+
+        - Topic: _Data System Object_ as a Systematic Construct with
+          Tangible Representation in a _Data System_ (NB:
+          Generalizations in IT/ICT Domains)
+
+            - TBD: Deriving Terms from Arbitrary Data Objects - Towards a
+              Survey of Methodologies
+
+            - NB: File, Database, or Protocol Data Object (NB, Ephemeral
+              Request/Response Data, per any Generally Well Known
+              Information Systems Protocol) ... as a Data System Object
+              Kind, at a certain granularity of model.
+
+        - Topic: _Project Resource_ as a Terminological Entity with one
+          or more objective representations, closed onto one or more
+          _Project_
+
+        - Topic: Processes and Support - Process Definitions for Portable
+          Process Support Tools in Distributed Project Environments
+
+            - TBD: FIPA SL as an intermediate schema/syntax for process
+              support tools in distributed information systems; FIPA SL
+              in extension/application of knowledge representation and
+              inference support in ISI PowerLoom(R), principally towards
+              applications in distributed information systems for
+              project support environments.
+
+        - Topic: Projects and Archives - Terminological Entity
+          definitions, forms of objective representation, and reusable
+          tools (editorial/content oriented systems) (Ed. NB: Zotero)
 
 
 ### CommonIDE - Concepts of Design - IDE UI - Editor Views
@@ -712,11 +848,35 @@ graphical applications using GTK+
  -->
 <!--  LocalWords:  pSGML libxml vis se Stylesheet freedesktop FDO Dia
  -->
-<!--  LocalWords:  thinkum contrib Gitlab GtkSocket GtkPlug LLVM JIT
+<!--  LocalWords:  thinkum contrib Gitlab GtkSocket GtkPlug LLVM JIT SL
  -->
-<!--  LocalWords:  CLIM presentational gworld TechArchives NeXT JNI
+<!--  LocalWords:  CLIM presentational gworld TechArchives NeXT JNI CMU
  -->
-<!--  LocalWords:  Garnetdraw ABI bytecode Aggregadgets Aggregraphs
+<!--  LocalWords:  Garnetdraw ABI bytecode Aggregadgets Aggregraphs UNO
  -->
-<!--  LocalWords:  ncurses toolkits XCode Hildon Maemo
+<!--  LocalWords:  ncurses toolkits XCode Hildon Maemo Deallocation URE
+ -->
+<!--  LocalWords:  SIMULA StarSuite StarOffice IDL CORBA ORBit XUL RDF
+ -->
+<!--  LocalWords:  XPCOM XPIDL Nestscape gtkmm Itanium RCP Modelio cmds
+ -->
+<!--  LocalWords:  bmake CMake readline editline eval Eval IPC SIGCONT
+ -->
+<!--  LocalWords:  Exec'd POSIX ASN CLOS GSS PTY subshell LTP AST XLib
+ -->
+<!--  LocalWords:  defportable CLX Interactors Devo subsq deallocation
+ -->
+<!--  LocalWords:  tmux Taggged libc OpenGL GPUs audal DEFSIGNATURE ltp
+ -->
+<!--  LocalWords:  DEFIMPLEMENTATION JSON Phabricator FOSS Visio SMTP
+ -->
+<!--  LocalWords:  Microsystems Mylyn SSL OpenSSL syntaxes IDE's XDG
+ -->
+<!--  LocalWords:  GtkBuilder ligblade Notational Formalisms CLIF ISI
+ -->
+<!--  LocalWords:  PowerLoom MOF UML SysML CGIF ODM Metamodel OCL VDM
+ -->
+<!--  LocalWords:  XMI SDL TTCN ECMA DMTF CIM OMG RedFish ICT FIPA
+ -->
+<!--  LocalWords:  Zotero
  -->
